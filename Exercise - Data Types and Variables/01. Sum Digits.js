@@ -1,6 +1,7 @@
 function sumDigits(input) {
   let stringInput = input.toString();
   let sum = 0;
+  // Ако е число се събират, ако е стринг се конкатенират.
   for (let i = 0; i < stringInput.length; i++) {
     sum += Number(stringInput[i]);
   }
