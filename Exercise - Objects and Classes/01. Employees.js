@@ -1,15 +1,25 @@
-// 01.Person Info
-function personInfo(firstName, lastName, age) {
-  let person = {
-    firstName: firstName,
-    lastName: lastName,
-    age: age,
-  };
-  for (let key in person) {
-    console.log(key + ": " + person[key]);
+function employees(arr) {
+  //we have multiple employees - multiple objects = for loop
+  let employeesObjects = [];
+  for (let i = 0; i < arr.length; i++) {
+    let employee = {
+      name: arr[i],
+      personalNum: arr[i].length,
+    };
+    employeesObjects.push(employee);
   }
-  return person;
+  for (let curEmployee of employeesObjects) {
+    // curEmployee == employee in a single iteration at this point
+    console.log(
+      `Name: ${curEmployee.name} -- Personal Number: ${curEmployee.personalNum}`
+    );
+  }
 }
 
-personInfo("Peter", "Pan", "20");
-personInfo("George", "Smith", "18");
+// employees([
+//   "Silas Butler",
+//   "Adnaan Buckley",
+//   "Juan Peterson",
+//   "Brendan Villarreal",
+// ]);
+employees(["Samuel Jackson", "Will Smith", "Bruce Willis", "Tom Holland"]);
