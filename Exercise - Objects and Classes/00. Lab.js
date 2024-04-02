@@ -55,3 +55,18 @@ function printName({ firstName, middleName, lastName }) {
   console.log(`The tallest person is: ${firstName} ${middleName} ${lastName}.`);
 }
 printName(arr[0].name);
+//=====================CLASSES==================================================================
+// Practice Task
+// Let's create a class to practice! Suppose we're building a simple application for a library.
+// You can create a Book class that represents books in the library.
+// Each book should have properties like title, author, and yearPublished, and a method getSummary that returns a summary of the book.
+
+class Book {
+  constructor(title, author, yearPublished) {
+    this.title = title;
+    this.author = author;
+    getSummary() {
+      
+    }
+  }
+}
