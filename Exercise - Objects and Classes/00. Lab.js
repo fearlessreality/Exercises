@@ -65,8 +65,8 @@ class Book {
   constructor(title, author, yearPublished) {
     this.title = title;
     this.author = author;
-    getSummary() {
-      
-    }
+    // getSummary() {
+
+    // }
   }
 }
